@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:700|Berkshire+Swash|Yesteryear|Work+Sans:400,500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #070600;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.highlight {
+  text-decoration: none;
+  border-bottom: 10px solid #ea526f;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav {
+  width: 150px;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  background: rgba(238, 238, 238, 0.8);
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  height: 40px;
+  padding: 16px;
+  text-decoration: none;
+  color: #099cc5;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+  font-size: 150%;
+}
+
+.sidenav a.active {
+  font-size: 200%;
+}
+
+.main {
+  padding-bottom: 60px;
+}
+
+.section {
+  margin-top: 46px;
+}
+
+#intro {
+  height: 100vh;
+  background: url("./split-bills.png") no-repeat center;
+  background-size: cover;
+  padding-left: 140px;
+  color: #f7f7ff;
+}
+
+#intro h1 {
+  padding-top: 16vh;
+  margin-left: -10vh;
+  margin-top: 0;
+  font-family: "Arvo", serif;
+}
+
+#intro h1 span {
+  font-family: cursive;
+  font-size: 72px;
+}
+
+.intro-bottom {
+  height: 88px;
+  background: url("./split-bills-bottom.png") no-repeat center;
+  background-size: cover;
+}
+
+.button {
+  background-color: #099cc5;
+  border: none;
+  border-bottom: 3px solid rgb(5, 97, 122);
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 8px 4px;
+}
+
+.button.small {
+  font-size: 14px;
+  padding: 8px 18px;
+}
+
+.button.extra-small {
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 6px 14px;
+}
+
+.button.primary {
+  background-color: #ea526f;
+  border-color: #943345;
+}
+
+input[type="submit"] {
+  background-color: #099cc5;
+  border: none;
+  border-bottom: 3px solid rgb(5, 97, 122);
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 8px 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ea526f;
+  border-color: #943345;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  width: 200px;
+  height: 21px;
+  padding: 10px;
+  margin: 8px 4px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #099cc5;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #a7a7a7;
+  text-transform: capitalize;
+}
+
+.select {
+  display: inline-block;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.5;
+  padding: 10px 28px 10px 10px;
+  width: 224px;
+  margin: 8px 4px;
+  border: 2px solid #099cc5;
+  border-radius: 8px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("./arrow-down.png");
+  background-repeat: no-repeat, repeat;
+  background-position: right 10px top 50%, 0 0;
+  background-size: 10px auto, 100%;
+}
+.select::-ms-expand {
+  display: none;
+}
+.select:hover {
+  border-color: #ea526f;
+}
+.select:focus {
+  box-shadow: 0 0 1px 3px #ea526f;
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+.select option {
+  font-weight: normal;
+}
+
+.btn-group button {
+  background-color: #099cc5;
+  border: none;
+  border-bottom: 3px solid rgb(5, 97, 122);
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-group button:first-child {
+  border-right: solid 1px #f7f7ff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.btn-group button:last-child {
+  border-left: solid 1px #f7f7ff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn-group button:hover {
+  background-color: #ea526f;
+  border-color: #943345;
+}
+
+.btn-group button.active {
+  background-color: #ea526f;
+  border-color: #943345;
+}
+
+.image-result-container {
+  border: solid 1px black;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.face-rectangle {
+  border: solid 2px grey;
+  position: absolute;
+}
+
+.face-rectangle.green-border {
+  border-color: green;
+}
+
+.face-rectangle.red-border {
+  border-color: red;
+}
+
+.camera-area {
+  position: relative;
+}
+
+.camera {
+  width: 400px;
+  height: 300px;
+  background: black;
+}
+
+.camera-buttons {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 1;
+}
+
+.preview-canvas {
+  background: black;
+  margin-left: 1px;
+  position: relative;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0 10px 0;
+}
+
+.payment-form div label {
+  font-size: 14px;
+  margin-left: 4px; 
+}
+
+.payment-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code {
+    border: 1px solid #070600;
+    margin-left: 30px;
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
